@@ -15,7 +15,7 @@ public class EmailService {
     @Value("${app.sender.email}")
     private String fromEmail;
 
-    @Value("${app.sendgrid.api.key}")
+    @Value("${spring.mail.password}")
     private String apiKey;
 
     public void sendOtpEmail(String toEmail, String otp, String fullName) {
