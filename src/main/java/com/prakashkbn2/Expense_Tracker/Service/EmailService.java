@@ -22,7 +22,7 @@ public class EmailService {
     @Autowired
     private JavaMailSender mailSender;
 
-    @Value("${spring.mail.username}")
+    @Value("${app.sender.email}")
     private String fromEmail;
 
     /**
